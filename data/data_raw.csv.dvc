@@ -1,4 +1,4 @@
-outs:
+git outs:
 - md5: 500a0acbd112b7c512929eac892f9864
   size: 4009
   hash: md5
