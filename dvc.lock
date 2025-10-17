@@ -12,3 +12,23 @@ stages:
       hash: md5
       md5: 500a0acbd112b7c512929eac892f9864
       size: 4009
+  train:
+    cmd: python train.py
+    deps:
+    - path: data/data_raw.csv
+      hash: md5
+      md5: 500a0acbd112b7c512929eac892f9864
+      size: 4009
+    - path: train.py
+      hash: md5
+      md5: 4ad78cb66cc88b8fd2698aca03166672
+      size: 902
+    outs:
+    - path: confusion_matrix.png
+      hash: md5
+      md5: 93d7156cd67013ca5222e5250e8060d7
+      size: 23003
+    - path: metrics.json
+      hash: md5
+      md5: 9a0379eaa11dd7b9e9995a62a5f21656
+      size: 17
